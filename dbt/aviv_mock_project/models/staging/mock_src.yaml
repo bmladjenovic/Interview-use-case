@@ -1,0 +1,23 @@
+version: 2
+
+# All the sources for mock use case defined in this file
+
+sources:
+
+## mock_raw
+    
+  - name: mock_raw
+    description: load tables for AVIV mock use case
+
+    freshness:
+      warn_after:
+        count: 9999 
+        period: day
+
+    tables:
+      
+      - name: contact_leads
+        identifier: contact_leads
+      
+      - name: property_listings
+        identifier: property_listings

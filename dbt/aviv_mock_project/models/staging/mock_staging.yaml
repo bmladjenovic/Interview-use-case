@@ -1,0 +1,25 @@
+version: 2
+
+# Documentation on the staging models and their respective primary keys
+
+models:
+
+  - name: active_listings
+    description: "Currently active listings"
+    columns:
+
+      - name: listing_id
+        data_tests:
+          - not_null
+          - unique
+          
+  - name: leads
+    description: "Contacts"
+    columns:
+
+      - name: contact_id
+        data_tests:
+          - not_null
+          - unique
+          
+  
